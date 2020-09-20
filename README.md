@@ -44,7 +44,7 @@ After cloning the repo, there are a couple of initial steps;
    you will need to correct the import paths. Here's a nice `find` one-liner for accomplishing this
    (replace `yourscmprovider.com/youruser/yourrepo` with your cloned repo path):
    ```bash
-   $ find . -path ./vendor -prune -o -type f \( -name '*.go' -o -name '*.proto' \) -exec sed -i -e "s;github.com/johanbrandhorst/grpc-gateway-boilerplate;yourscmprovider.com/youruser/yourrepo;g" {} +
+   $ find . -path ./vendor -prune -o -type f \( -name '*.go' -o -name '*.proto' \) -exec sed -i -e "s;github.com/johanbrandhorst/grpc-gateway-go-sandbox;yourscmprovider.com/youruser/yourrepo;g" {} +
    ```
 1. Finally, generate the files with `make generate`.
    If you encounter an error here, make sure you've installed

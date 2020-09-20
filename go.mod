@@ -1,4 +1,4 @@
-module github.com/johanbrandhorst/grpc-gateway-boilerplate
+module github.com/johanbrandhorst/grpc-gateway-go-sandbox
 
 go 1.12
 
