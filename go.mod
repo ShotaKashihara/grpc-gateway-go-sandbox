@@ -1,4 +1,4 @@
-module github.com/johanbrandhorst/grpc-gateway-go-sandbox
+module github.com/ShotaKashihara/grpc-gateway-go-sandbox
 
 go 1.12
 
