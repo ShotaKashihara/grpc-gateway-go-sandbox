@@ -1,2 +1,10 @@
 #!/usr/bin/env bash
 
+# e.g. https://grpc-gateway-go-sandbox-wnld2gd2oa-an.a.run.app
+ENDPOINT=$1
+
+echo $ENDPOINT
+
+curl -X GET "${ENDPOINT}/api/v1/users" -H "accept: application/json"
+
+curl -X POST "${ENDPOINT}/api/v1/users" -H "accept: application/json" -H "Content-Type: application/json" -d "{}"
